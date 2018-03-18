@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Tarjouslaskentamalli (beta)</title>
+        <link href="helat.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery.flexdatalist.min.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="lukkojquery.js"></script>
+        <script src="jquery.flexdatalist.min.js"></script>
+    </head>
+    <body>
+        <div id="menubar">
+            <h2>Valikko:</h2>
+        </div>
+        <div id="properties">
+            Lukoston ominaisuudet:<br>
+            <select id='surface'>
+                <option value='' disabled selected>Valitse lukoston pintak&aumlsittely</option>
+                <option value="Cr">Kromi</option>
+                <option value="HCr">Satiinikromi</option>
+                <option value="APr">Antiikkipronssi</option>
+                <option value="KiLa">Kiillotettu Messinki</option>
+                <option value="HaLa">Harjattu Messinki</option>
+                <option value="Val">Valkoinen</option>
+                <option value="Mus">Musta</option>
+                <option value="Har">Alumiininharmaa</option>
+                <option value="Gra">Grafiitti</option>
+                <option value="Rst">Ruostumaton ter&aumls</option>
+                <option value="Aho">Anodisoitu alumiini</option>
+            </select><br><br>
+            <select id='keysystem' >
+                <option value='' disabled selected>Valitse avainj&aumlrjestelm&auml</option>
+                <option value="B">Sentry</option>
+                <option value="C">Classic</option>
+                <option value="N">Protec</option>
+                <option value="T">Protec 2</option>
+                <option value="Z">Sento</option>
+            </select> 
+        </div>
+        <div id="helat">
+        <p>Syötä helatunnukset kenttiin alapuolella (Demoversiossa ainoastaan tunnukset M26-1 ja M29-1)</p>
+            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
+            <button type="button" id="AddRowButton" onclick="AddRow()">Lis&auml&auml Rivi</button>
+            <button type="button" onclick="MassCalculate()">Laske massat</button>
+        </div>  
+        <div id="calculation_output">
+            
+        </div>
+    </body>
+    <footer>
+        <p>&copy; Juho Hirvinen - 2018 </p>
+    </footer>
+</html>

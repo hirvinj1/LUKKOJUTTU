@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  #menubar {
+      border-style : dashed;
+      border : black;
+      width : 100%;
+      text-align: right;
+      color: red;
+      
+  }
+  
+  body {
+    position: relative;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  #helat {
+    margin: 10px;
+  }
+
+  input {
+      border-radius: 4px;
+      margin: 10px;
+      text-align: center;
+  }
+  /**
+   * Footer Styles
+   */
+  
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+  }
