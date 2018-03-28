@@ -322,13 +322,7 @@
     {"id":"EXB-S20-2",
     "products":["ACY037","APE592","ADB022","ADB104","ADB104","ADB109","ADA001","ADA001","ADA061","ADA061","ADA039","AEA280","AEA280","AEA211","AEA217","AEA501","PULL_OUT","APBE002","ALE980","ALE953","APE951","AFD101","AEA280","AEA211","APBE002","DOOR_STOP"],
     "classes":["EN1125"],
-    "data_date":"10.04.2013"},
+    "data_date":"10.04.2013"}
 
-    // jatka sivulta 82
-]
-    
-    {"id":"",
-    "products":[""],
-    "classes":[],
-    "data_date":""},
+    ]
     
