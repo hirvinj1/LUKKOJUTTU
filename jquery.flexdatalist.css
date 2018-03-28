@@ -7,6 +7,7 @@
  * Github:
  * https://github.com/sergiodlopes/jquery-flexdatalist/
  *
+ * Font family changed 28.3.2018 Juho Hirvinen
  */
 .flexdatalist-results {
     position: absolute;
@@ -21,6 +22,7 @@
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
     color: #333;
     list-style: none;
+    font-family: 'Archivo Narrow', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -28,10 +30,12 @@
     border-bottom: 1px solid #ccc;
     padding: 8px 15px;
     font-size: 14px;
+    font-family: 'Archivo Narrow', sans-serif;
     line-height: 20px;
 }
 .flexdatalist-results li span.highlight {
     font-weight: 700;
+    font-family: 'Archivo Narrow', sans-serif;
     text-decoration: underline;
 }
 .flexdatalist-results li.active {
@@ -41,6 +45,7 @@
 }
 .flexdatalist-results li.no-results {
     font-style: italic;
+    font-family: 'Archivo Narrow', sans-serif;
     color: #888;
 }
 
@@ -54,9 +59,11 @@
 }
 .flexdatalist-results li .group-name {
     font-weight: 700;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 .flexdatalist-results li .group-item-count {
     font-size: 85%;
+    font-family: 'Archivo Narrow', sans-serif;
     color: #777;
     display: inline-block;
     padding-left: 10px;
@@ -122,6 +129,7 @@
     font-weight: 700;
     padding: 2px 5px;
     font-size: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
     line-height: 20px;
     cursor: pointer;
     position: absolute;

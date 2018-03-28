@@ -117,7 +117,7 @@ jQuery.fn.flexdatalist = function (_option, _value) {
         disabled: null,
         maxShownResults: 100,
         removeOnBackspace: true,
-        noResultsText: 'No results found for "{keyword}"',
+        noResultsText: '"{keyword}" ei ole heloitustunnus',
         toggleSelected: false,
         allowDuplicateValues: false,
         redoSearchOnFocus: true,

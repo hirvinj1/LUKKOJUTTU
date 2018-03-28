@@ -1,10 +1,10 @@
 var helalista
 
 $(function(){
-    $.getJSON('helat.json',function(json){
+    $.getJSON('https://api.myjson.com/bins/qv4tb',function(json){
         helalista = json;
         for (i in helalista){
-            console.log(helalista[i]); // debuggausta varten. Muista poistaa.
+        //    console.log(helalista[i]); // debuggausta varten. Muista poistaa.
         }
     });
 });
@@ -48,7 +48,7 @@ function MassCalculate(){
     $("#AddRowButton").before("<input type='text' class='flexdatalist'/><br>");
     $('.flexdatalist').flexdatalist({
         minLength : 1,
-        data: "helat.json",
+        data: "https://api.myjson.com/bins/qv4tb",
         searchIn : "id"
     })
 }

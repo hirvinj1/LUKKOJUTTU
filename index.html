@@ -4,7 +4,7 @@
     <head>
         <meta charset='utf-8'/>
         <title>Tarjouslaskentamalli (beta)</title>
-        <link href="helat.css" rel="stylesheet" type="text/css"/>
+        <link href="testi.css" rel="stylesheet" type="text/css"/>
         <link href="jquery.flexdatalist.min.css" rel="stylesheet" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="lukkojquery.js"></script>
@@ -39,13 +39,13 @@
                 <option value="Z">Sento</option>
             </select> 
         </div>
-        <div id="helat">
+        <div id="heloitustunnukset_column">
         <p>Syötä helatunnukset kenttiin alapuolella (Demoversiossa ainoastaan tunnukset M26-1 ja M29-1)</p>
-            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="helat.json" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
             <button type="button" id="AddRowButton" onclick="AddRow()">Lis&auml&auml Rivi</button>
             <button type="button" onclick="MassCalculate()">Laske massat</button>
         </div>  
