@@ -1,5 +1,334 @@
 [
-    {"id":"M26-1","products":["ACY001","ALC102","ACY062","A4181","HANDLEPAIR"]},
-    {"id":"M29-1","products":["ACY001","ACY037","ALC120","ADC335","ADC199","PULLHANDLE","PULLHANDLE"]}
-]
+    {"id":"AP-M1-1",
+    "products":["ARI213","AC5190"],
+    "classes":["EXIT"], 
+    "data_date":"26.09.2013"},
 
+    {"id":"AP-M1-2",
+    "products":["ARI213","AC5190","ADF3000"],
+    "classes":["EXIT"],
+    "data_date":"26.09.2013"},
+
+    {"id":"AP-M2-1",
+    "products":["ALC190","AC001","ADC335","ADC190","HANDLEPAIR_U","AVR"],
+    "classes":["ONEFIT","EXIT","FK1"],
+    "data_date":"26.09.2013"},
+
+    {"id":"AP-M2-2",
+    "products":["ALC190","AC001","ADC335","ADC190","ADF3000","HANDLEPAIR_U","AVR"],
+    "classes":["ONEFIT","EXIT","FK1"],
+    "data_date":"26.09.2013"},
+
+    {"id":"AP-S1-1",
+    "products":["ACY037","ABL581APX","AAR001","ADC240","ADC191","HANDLEPAIR_U","AVR"],
+    "classes":["ONEFIT","EXIT","FK1"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S1-2",
+    "products":["ACY037","ABL581APX","AAR001","ADC240","ADF3000","ADC191","HANDLEPAIR_U","AVR"],
+    "classes":["ONEFIT","EXIT","FK1"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S2-1",
+    "products":["ACY063","ABL480APX","AAR001","ADC240","ADC191","HANDLEPAIR_P","AVR"],
+    "classes":["EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S2-2",
+    "products":["ACY063","ABL480APX","AAR001","ADC240","ADC191","ADF3000","HANDLEPAIR_P","AVR"],
+    "classes":["EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S3-1",
+    "products":["ACY037","ABL581APX","AVR","AAR001","ADC335","ADC190","HANDLEPAIR_U"],
+    "classes":["EXIT","ONEFIT","FK1"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S3-2",
+    "products":["ACY037","ABL581APX","AVR","AAR001","ADC335","ADC190","HANDLEPAIR_U","ADF3000"],
+    "classes":["EXIT","ONEFIT","FK1"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S4-1",
+    "products":["ACY063","ABL480APX","AVR","AAR001","ADC335","ADC190","HANDLEPAIR_P"],
+    "classes":["EXIT"],
+    "data_date":"14.11.2013"},
+   
+    {"id":"AP-S4-2",
+    "products":["ACY063","ABL480APX","AVR","AAR001","ADC335","ADC190","HANDLEPAIR_P","ADF3000"],
+    "classes":["EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S5-1",
+    "products":["ACY037","ABL581APX","AVR","AAR001","A953030","ADC335","ADC199","HANDLEPAIR_U"],
+    "classes":["ONEFIT","FK1","FIRE","EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S5-2",
+    "products":["ACY037","ABL581APX","AVR","AAR001","A953030","ADC335","ADC199","HANDLEPAIR_U","ADF3000"],
+    "classes":["ONEFIT","FK1","FIRE","EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S6-1",
+    "products":["ACY063","ABL480APX","AVR","AAR001","A953037","ADC335","ADC199","HANDLEPAIR_P"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AP-S6-2",
+    "products":["ACY063","ABL480APX","AVR","AAR001","A953037","ADC335","ADC199","HANDLEPAIR_P","ADF3000"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AC2-1",
+    "products":["ACY037","AEL590","AVR","AEC111","AEA280","AEA217","AEA501","AEA701","PULL_OUT","HANDLE_IN"],
+    "classes":["FK1","EXIT"],
+    "data_date":"17.04.2013"},
+
+    {"id":"AC3-1",
+    "products":["ACY037","AEL580","AVR","AEC111","AEA280","AEA210","AEA501","AEA701","HANDLEPAIR_U"],
+    "classes":["FK1","EXIT"],
+    "data_date":"17.04.2013"},
+
+    {"id":"AC4-1",
+    "products":["ACY037","AEL590","AVR","AEC111","ADA460","ADA147","ADA103","ADA001","ADA001","ADA034","AEA280","AEA217","AEA503","PULL_OUT","HANDLE_IN"],
+    "classes":["FK1","EXIT"],
+    "data_date":"17.04.2013"},
+
+    {"id":"AC13-1",
+    "products":["AEC111","AEA501","AEA701"],
+    "classes":["EXIT"],
+    "data_date":"17.04.2013"},
+
+    {"id":"AC14-1",
+    "products":["ACY016","ABL581COX","AVR","AEC110","HANDLEPAIR_U"],
+    "classes":["FK1","EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AC15-1",
+    "products":["ACY016","ABL583COX","AVR","AEC110","HANDLEPAIR_U"],
+    "classes":["FK1"],
+    "data_date":"14.11.2013"},
+
+    {"id":"AC16-1",
+    "products":["ACY001","ABL583COX","AVR","AEC110","HANDLEPAIR_U"],
+    "classes":["FK1","EXIT"],
+    "data_date":"14.11.2013"},
+
+    {"id":"EXH-M02-1",
+    "products":["ACY037","ALE180","AVR","ADC240","ADC199","HANDLEPAIR_U_EXIT"],
+    "classes":["FK1","FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M02-1",
+    "products":["ACY037","ALE180","AVR","ADC240","ADC199","APBE001","HANDLE_U_OUT"],
+    "classes":["FK1","FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M06-1",
+    "products":["ACY037","ALE184","AVR","ADC240","ADC199","PULL_OUT","HANDLE_IN_U_EXIT"],
+    "classes":["FK1","FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M06-1",
+    "products":["ACY037","ALE184","AVR","ADC240","ADC199","PULL_OUT","APBE002"],
+    "classes":["FK1","FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M09-1",
+    "products":["ACY037","ALE185","AVR","ADC335","ADC190","PULL_OUT","HANDLE_IN_U_EXIT"],
+    "classes":["FK1","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M09-1",
+    "products":["ACY037","ALE185","AVR","ADC335","ADC190","PULL_OUT","APBE002"],
+    "classes":["FK1","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M15-1",
+    "products":["ACY002","ALE184","AVR","ADC240","ADC199","PULL_OUT","AEH900","HANDLE_IN_U_EXIT"],
+    "classes":["FK1","FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M20-1",
+    "products":["ACY063","ALE310","AVR","ADC240","ADC199","HANDLEPAIR_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M20-1",
+    "products":["ACY063","ALE310","ALP702","ADC240","ADC199","APBE001","HANDLE_P_OUT"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M24-1",
+    "products":["ACY063","ALE314","AVR","ADC240","ADC199","PULL_OUT","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M24-1",
+    "products":["ACY063","ALE314","ALP702","ADC240","ADC199","PULL_OUT","APBE003"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M27-1",
+    "products":["ACY063","ALE315","AVR","ADC240","ADC190","PULL_OUT","HANDLE_IN_P_EXIT"],
+    "classes":["EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M27-1",
+    "products":["ACY063","ALE315","ALP702","ADC240","ADC190","PULL_OUT","APBE003"],
+    "classes":["EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M33-1",
+    "products":["ACY065","ALE314","AVR","ADC240","ADC199","PULL_OUT","AEH900","PULL_OUT","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M37-2",
+    "products":["ACY037","ALE186","ADC250","ADC250","AFD461","PULL_OUT","HANDLE_IN_U_EXIT","ALE980","ALE982","ALE981","AFD101","HANDLE_IN_U_EXIT"],
+    "classes":["EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M37-2",
+    "products":["ACY037","ALE186","ADC250","ADC250","AFD461","PULL_OUT","APBE002","ALE980","ALE982","ALE981","AFD101","APBE002"],
+    "classes":["EN1125"],
+    "data_date":"10.04.2013"},
+    
+    {"id":"EXH-M38-2",
+    "products":["ACY037","ALE181","ADC250","ADC250","AFD461","HANDLEPAIR_U_EXIT","ALE980","ALE982","ALE981","AFD101","HANDLE_IN_U_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M38-2",
+    "products":["ACY037","ALE181","ADC250","ADC250","AFD461","APBE001","HANDLE_P_OUT","ALE980","ALE982","ALE981","AFD101","APBE002","DOOR_STOP"],
+    "classes":["FIRE","EN1125"],
+    "data_date":""},
+
+    {"id":"EXH-M39-2",
+    "products":["ACY037","ALE183","ADC250","ADC250","AFD461","PULL_OUT","HANDLE_IN_U_EXIT","ALE980","ALE982","ALE981","AFD101","HANDLE_IN_U_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M39-2",
+    "products":["ACY037","ALE183","ADC250","ADC250","AFD461","PULL_OUT","APBE002","ALE980","ALE982","ALE981","AFD101","APBE002"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M40-2",
+    "products":["ACY002","ALE183","ADC250","ADC250","AFD461","PULL_OUT","AEH900","HANDLE_IN_U_EXIT","ALE980","ALE982","ALE981","AFD101","AEH900","HANDLE_IN_U_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M41-2",
+    "products":["ACY063","ALE315","ADC250","ADC250","AFD461","PULL_OUT","HANDLE_IN_P_EXIT","ALE930","ALE932","ALE931","AFD101","HANDLE_IN_P_EXIT"],
+    "classes":["EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M41-2",
+    "products":["ACY063","ALE315","ADC250","ADC250","AFD461","PULL_OUT","APBE003","ALE930","ALE932","ALE931","AFD101","APBE003"],
+    "classes":["EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M42-2",
+    "products":["ACY063","ALE310","ADC250","ADC250","AFD461","HANDLEPAIR_P_EXIT","ALE930","ALE932","ALE931","AFD101","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M42-2",
+    "products":["ACY063","ALE310","ADC250","ADC250","AFD461","APBE001","HANDLE_P_OUT","ALE930","ALE931","ALE932","APBE003","AFD101"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M43-2",
+    "products":["ACY063","ALE314","ADC250","ADC250","AFD461","PULL_OUT","HANDLE_IN_P_EXIT","ALE930","ALE931","ALE932","AFD101","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-M43-2",
+    "products":["ACY063","ALE314","ADC250","AFD461","PULL_OUT","APBE003","ALE930","ALE931","ALE932","AFD101","APBE003"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M44-2",
+    "products":["ACY065","ALE314","ADC250","ADC250","AFD461","PULL_OUT","AEH900","HANDLE_IN_P_EXIT","ALE930","ALE932","ALE931","AFD101","AEH900","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-M44-2",
+    "products":["ACY065","ALE314","ADC250","ADC250","AFD461","PULL_OUT","AEH900","HANDLE_IN_P_EXIT","ALE930","ALE932","ALE931","AFD101","AEH900","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXH-S02-1",
+    "products":["ACY037","AEL581","SAVR","ADC240","ADC199","AEA280","AEA210","AEA501","HANDLEPAIR_U_EXIT"],
+    "classes":["FK1","FIRE","EN179"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXB-S02-1",
+    "products":["ACY037","APE580","SAVR","ADC240","ADC199","AEA280","AEA210","AEA501","APBE001","HANDLE_U_OUT"],
+    "classes":["FK1"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXH-S06-1",
+    "products":["ACY037","AEL593","SAVR","ADC240","ADC199","AEA280","AEA217","AEA501","PULL_OUT","HANDLE_IN_U_EXIT"],
+    "classes":["FK1","FIRE","EN179"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXB-S06-1",
+    "products":["ACY037","APE590","SAVR","ADC240","ADC199","AEA280","AEA217","AEA501","PULL_OUT","APBE002"],
+    "classes":["FK1","FIRE","EN1125"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXH-S11-1",
+    "products":["ACY063","AEL480","AVR","ADC240","ADC199","AEA281","AEA210","AEA502","HANDLEPAIR_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"11.04.2013"},
+    
+    {"id":"EXB-S11-1",
+    "products":["ACY063","AEL480","ALP702","ADC240","ADC199","AEA281","AEA210","AEA502","APBE001","HANDLE_P_OUT"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXH-S15-1",
+    "products":["ACY063","AEL490","AVR","ADC240","ADC199","AEA281","AEA217","AEA502","PULL_OUT","HANDLE_IN_P_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXB-S15-1",
+    "products":["ACY063","AEL490","ALP702","ADC240","ADC199","AEA281","AEA217","AEA502","PULL_OUT","APBE003"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"11.04.2013"},
+
+    {"id":"EXP-S18-1",
+    "products":["ACY080","AEL402","AVR","ADC240","ADC190","AEA280","AEA211","AEA502","PULL_OUT"],
+    "classes":["EN179"],
+    "data_date":"11.04,2013"},
+
+    {"id":"EXH-S19-2",
+    "products":["ACY037","APE592","ADC250","ADC250","AFD461","AEA280","AEA217","AEA501","PULL_OUT","HANDLE_IN_U_EXIT","ALE980","ALE953","ALE981","AFD101","HANDLE_IN_U_EXIT"],
+    "classes":["FIRE","EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-S19-2",
+    "products":["ACY037","APE592","ADC250","ADC250","AFD461","AEA280","AEA217","AEA501","PULL_OUT","APBE002","ALE980","ALE953","ALE981","AFD101","APBE002"],
+    "classes":["FIRE","EN1125"],
+    "data_date":"24.06.2013"},
+
+    {"id":"EXH-S20-2",
+    "products":["ACY037","APE592","ADB022","ADB104","ADB109","ADA001","ADA001","ADA061","ADA061","ADA039","AEA280","AEA280","AEA217","AEA211","AEA501","PULL_OUT","HANDLE_IN_U_EXIT","ALE980","ALE953","APE951","AFD101","AEA280","AEA211","HANDLE_IN_U_EXIT","DOOR_STOP"],
+    "classes":["EN179"],
+    "data_date":"10.04.2013"},
+
+    {"id":"EXB-S20-2",
+    "products":["ACY037","APE592","ADB022","ADB104","ADB104","ADB109","ADA001","ADA001","ADA061","ADA061","ADA039","AEA280","AEA280","AEA211","AEA217","AEA501","PULL_OUT","APBE002","ALE980","ALE953","APE951","AFD101","AEA280","AEA211","APBE002","DOOR_STOP"],
+    "classes":["EN1125"],
+    "data_date":"10.04.2013"},
+
+    // jatka sivulta 82
+]
+    
+    {"id":"",
+    "products":[""],
+    "classes":[],
+    "data_date":""},
+    
