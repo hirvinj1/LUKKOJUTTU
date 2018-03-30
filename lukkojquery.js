@@ -72,7 +72,7 @@ function SelectKeySystem(valinta){
     $("#avain-option").text("Avainjärjestelmä: " + valinta);
 }
 
-function formatKeys(input){
+function formatKeys(input){ //malli syötteen käsittelylle, mahdollisesti tarvitsee tietokannan
     if(input == 'PULL_OUT'){
         return "ULKOPUOLEN VEDIN";
     }

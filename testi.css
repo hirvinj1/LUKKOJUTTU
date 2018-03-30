@@ -60,19 +60,22 @@ footer {
 
 .dropdown {
     background-color: white;
-    width: 60px;
+    width: 120px;
     display: inline-block;
     position: relative;
-    height: 120px;
+    height: 40px;
     text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
-    background-color: grey;
+    background-color: lightgrey;
     display: block;
     position: absolute;
 }
 
+#AddRowButton:hover {
+    background-color: lawngreen;
+}
 .dropdown-content {
     display: none;
     width: inherit;
@@ -126,135 +129,6 @@ img { max-width: 100%; }
     margin: 0 auto;
     -webkit-box-shadow: 0px 0px 5px #000000;
     box-shadow: 0px 0px 5px #000000;
-}
-
-#container #top {
-    height: 40px;
-    background-color: #fff;
-    position: relative;
-    line-height: 40px;
-    padding: 46px 25px;
-}
-
-#top ul#navigation {
-    list-style: none;
-    float: right;
-    margin: 0;
-    color: #666;
-    height: 40px;
-    font-size: 18px;
-}
-
-#top #search {
-    width: 56px;
-    height: 40px;
-    top: 0;
-    right: 75px;
-    background-image: url(../img/search.png);
-    cursor: pointer;
-    position: absolute;
-}
-
-#searchbar {
-    height: 74px;
-    line-height: 74px;
-    display: none;
-    background-color: #3583c6;
-    padding-left: 32px;
-    position: relative;
-}
-
-.search {
-    width: 755px;
-    padding-left: 15px;
-    height: 30px;
-    color: #03345e;
-    border: 0;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 16px;
-}
-
-.submit:hover {
-    color: #96d7e7;
-    background-image: url(../img/searchBgHover.png);
-}
-
-.searchsite a {
-    color: #3583c6;
-}
-
-.searchsite a h2 {
-    text-decoration: none !important;
-}
-
-.search_page {
-    margin-bottom: 20px;
-    border: 1px solid #dddada;
-    padding: 20px;
-    margin-right: 100px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-
-.search_page a {
-    text-decoration: none;
-}
-
-.search_page address {
-    text-decoration: underline;
-}
-
-.submit {
-    color: #fff;
-    background: transparent;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Archivo Narrow', sans-serif;
-    border: 0;
-    background-image: url(../img/searchBg.png);
-    background-position: right;
-    padding-right: 45px;
-    background-repeat: no-repeat;
-    line-height: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-#searchbar #hideThis {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    display: block;
-    top: 2px;
-    right: 20px;
-    cursor: pointer;
-}
-#facebook {
-    width: 56px;
-    height: 40px;
-    background-image: url(../img/facebook_1.png);
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 20px;
-    cursor: pointer;
-}
-#facebook a {
-    width: 56px;
-    height: 40px;
-    display: block;
-    background-repeat: no-repeat;
-}
-#facebook a:hover {
-    background-image: url(../img/facebook_hover.png);
-}
-#navigation li {
-    float: left;
-    position: relative;
 }
 
 #navigation li .subdiv {
