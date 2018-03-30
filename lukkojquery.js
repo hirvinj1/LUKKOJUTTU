@@ -1,4 +1,6 @@
 var helalista
+var keysystem
+var surface
 
 $(function(){
     $.getJSON('https://api.myjson.com/bins/qv4tb',function(json){
@@ -34,11 +36,12 @@ function MassCalculate(){
             massalista[product_list[i]] = 1;
         }
     }
-    var tulos = $('#calculation_output');
+    var tulos = $('#laskentatulos');
     tulos.empty(); //Poista vanha sisältö tai ainakin varmista että on tyhjä
     var avaimet = Object.keys(massalista);
     for(i = 0; i < avaimet.length;i++){
-        var rivi = avaimet[i] + ' : ' + massalista[avaimet[i]] + '\n';
+        
+        var rivi = formatKeys(avaimet[i]) + ' : ' + massalista[avaimet[i]] + '\n';
         tulos.append(rivi);
         tulos.append('<br>');
     }
@@ -56,4 +59,33 @@ function MassCalculate(){
 
 function ParseProducts(){
 
+}
+
+function SelectSurface(valinta){
+    surface = valinta
+    $("#pinta-option").text("Pintakäsittely: " + valinta);
+    
+}
+
+function SelectKeySystem(valinta){
+    keysystem = valinta
+    $("#avain-option").text("Avainjärjestelmä: " + valinta);
+}
+
+function formatKeys(input){
+    if(input == 'PULL_OUT'){
+        return "ULKOPUOLEN VEDIN";
+    }
+    else if(input == 'HANDLEPAIR_U'){
+        return "UMPIOVEN PAINIKE";
+    }
+    else if(input == 'HANDLEPAIR_P'){
+        return "PROFIILIOVEN PAINIKE"
+    } 
+    else if(input == 'HANDLE_IN_U'){
+        return "UMPIOVEN PUOLIPAINIKE"
+    } 
+    else{
+        return input
+    }
 }

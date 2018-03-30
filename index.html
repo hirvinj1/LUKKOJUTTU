@@ -11,49 +11,43 @@
         <script src="jquery.flexdatalist.min.js"></script>
     </head>
     <body>
-        <div id="menubar">
-            <h2>Valikko:</h2>
-        </div>
-        <div id="properties">
+        <div id="properties" class="flex-container">
             Lukoston ominaisuudet:<br>
-            <select id='surface'>
-                <option value='' disabled selected>Valitse lukoston pintak&aumlsittely</option>
-                <option value="Cr">Kromi</option>
-                <option value="HCr">Satiinikromi</option>
-                <option value="APr">Antiikkipronssi</option>
-                <option value="KiLa">Kiillotettu Messinki</option>
-                <option value="HaLa">Harjattu Messinki</option>
-                <option value="Val">Valkoinen</option>
-                <option value="Mus">Musta</option>
-                <option value="Har">Alumiininharmaa</option>
-                <option value="Gra">Grafiitti</option>
-                <option value="Rst">Ruostumaton ter&aumls</option>
-                <option value="Aho">Anodisoitu alumiini</option>
-            </select><br><br>
-            <select id='keysystem' >
-                <option value='' disabled selected>Valitse avainj&aumlrjestelm&auml</option>
-                <option value="B">Sentry</option>
-                <option value="C">Classic</option>
-                <option value="N">Protec</option>
-                <option value="T">Protec 2</option>
-                <option value="Z">Sento</option>
-            </select> 
+            <div id="pinta" class='dropdown'>
+                <p id="pinta-option">Pintakäsittely: -</p>
+                <div class='dropdown-content'>
+                    <p onclick="SelectSurface('Cr')">Cr</p>
+                    <p onclick="SelectSurface('HCr')">HCr</p>
+                    <p onclick="SelectSurface('APr')">APr</p>
+                    <p onclick="SelectSurface('KiLa')">KiLa</p>
+                    <p onclick="SelectSurface('HaLa')">HaLa</p>
+                </div>
+            </div>
+            <div id="avain" class='dropdown'>
+                <p id="avain-option">Avainjärjestelmä: -</p>
+                <div class='dropdown-content'>
+                    <p onclick="SelectKeySystem('Classic')">Classic</p>
+                    <p onclick="SelectKeySystem('Sento')">Sento</p>
+                </div>
+            </div>
         </div>
-        <div id="heloitustunnukset_column">
-        <p>Syötä helatunnukset kenttiin alapuolella (Demoversiossa ainoastaan tunnukset M26-1 ja M29-1)</p>
-            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-            <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-            <button type="button" id="AddRowButton" onclick="AddRow()">Lis&auml&auml Rivi</button>
-            <button type="button" onclick="MassCalculate()">Laske massat</button>
-        </div>  
-        <div id="calculation_output">
-            
+        <div id="container" class="flex-container">
+            <div id="heloitustunnukset_column">
+            <p>Syötä helatunnukset kenttiin alapuolella:</p>
+                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
+                <div id="AddRowButton" class="div-button" onclick="AddRow()">Lis&auml&auml Rivi</div>
+                <div id="MassCalculateButton" class="div-button" onclick="MassCalculate()">Laske massat</div>
+            </div>  
+            <div id="laskentatulos">
+                <p>laskentatulos</p>
+            </div>
         </div>
     </body>
     <footer>
-        <p>&copy; Juho Hirvinen - 2018 </p>
+        <p>&copy; T:mi Juho Hirvinen - 2018 </p>
     </footer>
 </html>

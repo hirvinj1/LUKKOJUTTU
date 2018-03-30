@@ -80,7 +80,7 @@
     "data_date":"14.11.2013"},
 
     {"id":"AC2-1",
-    "products":["ACY037","AEL590","AVR","AEC111","AEA280","AEA217","AEA501","AEA701","PULL_OUT","HANDLE_IN"],
+    "products":["ACY037","AEL590","AVR","AEC111","AEA280","AEA217","AEA501","AEA701","PULL_OUT","HANDLE_IN_U"],
     "classes":["FK1","EXIT"],
     "data_date":"17.04.2013"},
 
@@ -90,7 +90,7 @@
     "data_date":"17.04.2013"},
 
     {"id":"AC4-1",
-    "products":["ACY037","AEL590","AVR","AEC111","ADA460","ADA147","ADA103","ADA001","ADA001","ADA034","AEA280","AEA217","AEA503","PULL_OUT","HANDLE_IN"],
+    "products":["ACY037","AEL590","AVR","AEC111","ADA460","ADA147","ADA103","ADA001","ADA001","ADA034","AEA280","AEA217","AEA503","PULL_OUT","HANDLE_IN_U"],
     "classes":["FK1","EXIT"],
     "data_date":"17.04.2013"},
 

@@ -15,7 +15,7 @@
 @import url(https://fonts.googleapis.com/css?family=Mako);
 
 body {
-    background-color: #bdbbbb;
+    background-color: whitesmoke;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 12px;
     color: #888;
@@ -26,10 +26,69 @@ body {
 .clear {
     clear: both;
 }
+/*
+Tämän alapuolella on itse lisätyt muotoilut
+*/
 
 #heloitustunnukset_column {
-    width: 50%;
+    width: 25%;
+    float: left;
 }
+
+#laskentatulos{
+    width: 20%;
+    float: left;
+}
+
+
+
+div {
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.dropdown {
+    background-color: white;
+    width: 60px;
+    display: inline-block;
+    position: relative;
+    height: 120px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    background-color: grey;
+    display: block;
+    position: absolute;
+}
+
+.dropdown-content {
+    display: none;
+    width: inherit;
+    z-index: 2;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0.2);
+}
+
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+/*
+tämän yläpuolella on itse lisätyt muotoilut
+*/ 
+
 
 h1 {
     font-size: 30px;
@@ -697,7 +756,7 @@ img { max-width: 100%; }
     display: inline;
     vertical-align: middle;
     max-width: 130px;
-    height: auto !important;
+
 }
 .levels h2 {
     margin-top: 40px;
@@ -781,38 +840,6 @@ small {
     margin-bottom: 15px;
 }
 
-.paginator, .paginator-pages {
-    color: #3583c6;
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.paginator-pages {
-    margin-top: 5px;
-}
-
-.paginator a, .paginator-pages a {
-    color: #3583c6;
-    text-decoration: none;
-}
-
-.paginator a:hover, .paginator-pages a:hover {
-    text-decoration: underline;
-}
-
-.paginator .disabled {
-    font-weight: normal;
-}
-
-.paginator-pages .current {
-    font-weight: normal;
-}
-
-.paginator-pages a.current:hover {
-    text-decoration: none;
-}
-
 #container #footer {
     height: 156px;
     background-color: #fff;
@@ -841,88 +868,4 @@ small {
     padding-top: 52px;
 }
 
-.logotable td {
-    vertical-align: top;
-    padding-bottom: 50px;
-    background-image: url(../img/borderBottom.png);
-    background-position: bottom;
-    background-repeat: repeat-x;
-    padding-top: 30px;
-    width: 230px;
-    height: 100px;
-}
 
-.fabo {
-    width: 40px;
-    float: left;
-    margin-right: 10px;
-}
-
-.fabo a {
-    display: block;
-    height: 40px;
-    background-image: url(../img/lightfabo.png);
-    background-repeat: no-repeat;
-    width: 40px;
-}
-
-.fabo a:hover {
-    background-image: url(../img/lighterfabo.png);
-}
-
-.sub-button a{
-    color: white;
-    display: block;
-    background-color: #3583c6;
-    overflow: hidden;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    width: 200px;
-    text-align: center;
-}
-.sub-button a:hover  {
-    background-color: #bdbbbb;
-}
-
-/* galleria */
-.gallery { overflow: hidden; padding: 10px 0; }
-.gallery-img {
-    float: left;
-    margin: 10px 20px 10px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    width: 215px;
-    height: 155px;
-    overflow: hidden;
-}
-.gallery-img > a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-}
-
-/* CONTACT */
-.contact input, .contact textarea {
-    font-family: Arial;
-    padding: 8px 10px;
-    width: 400px;
-    max-width: 100%;
-}
-.contact button {
-    background-color: #3583c6;
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 20px;
-    border: 0;
-    border-radius: 2px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.contact button:hover {
-    background-color: #5491C4;
-}
