@@ -13,39 +13,32 @@
     <body>
         <div id="properties" class="flex-container">
             Lukoston ominaisuudet:<br>
-            <div id="pinta" class='dropdown'>
+            <div id="pinta" class='dropdown','flex'>
                 <p id="pinta-option">Pintakäsittely: -</p>
                 <div class='dropdown-content'>
-                    <p onclick="SelectSurface('Cr')">Cr</p>
-                    <p onclick="SelectSurface('HCr')">HCr</p>
-                    <p onclick="SelectSurface('APr')">APr</p>
-                    <p onclick="SelectSurface('KiLa')">KiLa</p>
-                    <p onclick="SelectSurface('HaLa')">HaLa</p>
+                    <p class='dropdown-item' onclick="SelectSurface('Cr')">Cr</p>
+                    <p class='dropdown-item' onclick="SelectSurface('HCr')">HCr</p>
+                    <p class='dropdown-item' onclick="SelectSurface('APr')">APr</p>
+                    <p class='dropdown-item' onclick="SelectSurface('KiLa')">KiLa</p>
+                    <p class='dropdown-item' onclick="SelectSurface('HaLa')">HaLa</p>
                 </div>
             </div>
             <div id="avain" class='dropdown'>
                 <p id="avain-option">Avainjärjestelmä: -</p>
                 <div class='dropdown-content'>
-                    <p onclick="SelectKeySystem('Classic')">Classic</p>
-                    <p onclick="SelectKeySystem('Sento')">Sento</p>
+                    <p class='dropdown-item' onclick="SelectKeySystem('Classic')">Classic</p>
+                    <p class='dropdown-item' onclick="SelectKeySystem('Sento')">Sento</p>
                 </div>
             </div>
         </div>
-        <div id="container" class="flex-container">
-            <div id="heloitustunnukset_column">
+            <div id="heloitustunnukset_column" class='column'>
             <p>Syötä helatunnukset kenttiin alapuolella:</p>
-                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
-                <input type="text" class="flexdatalist" data-data="https://api.myjson.com/bins/qv4tb" data-search-in='id'/><br>
                 <div id="AddRowButton" class="div-button" onclick="AddRow()">Lis&auml&auml Rivi</div>
                 <div id="MassCalculateButton" class="div-button" onclick="MassCalculate()">Laske massat</div>
             </div>  
             <div id="laskentatulos">
                 <p>laskentatulos</p>
             </div>
-        </div>
     </body>
     <footer>
         <p>&copy; T:mi Juho Hirvinen - 2018 </p>

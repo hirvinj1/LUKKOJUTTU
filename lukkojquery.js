@@ -1,14 +1,16 @@
-var helalista
-var keysystem
-var surface
+var helalista;
+var keysystem;
+var surface;
+var data = window.localStorage;
 
 $(function(){
     $.getJSON('https://api.myjson.com/bins/qv4tb',function(json){
         helalista = json;
-        for (i in helalista){
-        //    console.log(helalista[i]); // debuggausta varten. Muista poistaa.
-        }
     });
+    for (i= 0;i < 20;i++){
+        AddRow();
+    }
+    
 });
 
 
@@ -37,10 +39,9 @@ function MassCalculate(){
         }
     }
     var tulos = $('#laskentatulos');
-    tulos.empty(); //Poista vanha sisältö tai ainakin varmista että on tyhjä
+    tulos.empty(); //Poista vanha sisältö tulostaulusta tai ainakin varmista että on tyhjä
     var avaimet = Object.keys(massalista);
     for(i = 0; i < avaimet.length;i++){
-        
         var rivi = formatKeys(avaimet[i]) + ' : ' + massalista[avaimet[i]] + '\n';
         tulos.append(rivi);
         tulos.append('<br>');
@@ -62,13 +63,13 @@ function ParseProducts(){
 }
 
 function SelectSurface(valinta){
-    surface = valinta
+    surface = valinta;
     $("#pinta-option").text("Pintakäsittely: " + valinta);
     
 }
 
 function SelectKeySystem(valinta){
-    keysystem = valinta
+    keysystem = valinta;
     $("#avain-option").text("Avainjärjestelmä: " + valinta);
 }
 
