@@ -61,17 +61,19 @@ footer {
 .dropdown {
     background-color: white;
     width: 200px;
-    display: inline-block;
+    display: flex;
     position: relative;
     height: 40px;
     text-align: center;
 }
 
+/*
 .dropdown:hover .dropdown-content {
     background-color: lightgrey;
     display: block;
-    position: absolute;
+    position: fixed;
 }
+*/
 
 #AddRowButton:hover {
     background-color: lawngreen;

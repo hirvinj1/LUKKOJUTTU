@@ -11,9 +11,16 @@ $(function(){
     for (i= 0;i < 20;i++){
         AddRow();
     }
-    
 });
 
+/*
+$(document).ready(function(){
+    $('.dropdown').click(function(){
+        //alert("Kukkuu!");  korvataan oikealla implementaatiolla
+        $('.dropdown-content').animate({display: 'block'});
+    }); 
+});
+*/
 
 
 function MassCalculate(){
@@ -51,7 +58,7 @@ function MassCalculate(){
 
  function AddRow(){
     $("#AddRowButton").before("<input type='text' class='flexdatalist'/><br>");
-    $('.flexdatalist').flexdatalist({
+    $('.flexdatalist:last').flexdatalist({
         minLength : 1,
         data: "https://api.myjson.com/bins/qv4tb",
         searchIn : "id"
@@ -84,7 +91,7 @@ function formatKeys(input){ //malli syötteen käsittelylle, mahdollisesti tarvi
         return "ULKOPUOLEN VEDIN";
     }
     else if(input == 'HANDLEPAIR_U'){
-        return "UMPIOVEN PAINIKE" + handlepair_u_type;
+        return "PAINIKE " + handlepair_u_type;
     }
     else if(input == 'HANDLEPAIR_P'){
         return "PROFIILIOVEN PAINIKE"

@@ -4,17 +4,17 @@
     <head>
         <meta charset='utf-8'/>
         <title>Tarjouslaskentamalli (beta)</title>
-        <link href="testi.css" rel="stylesheet" type="text/css"/>
+        <link href="helat.css" rel="stylesheet" type="text/css"/>
         <link href="jquery.flexdatalist.min.css" rel="stylesheet" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="lukkojquery.js"></script>
         <script src="jquery.flexdatalist.min.js"></script>
     </head>
     <body>
-        <div id="properties" class="flex-container">
-            Lukoston ominaisuudet:<br>
-            <div id="pinta" class='dropdown','flex'>
-                <p id="pinta-option">Pintakäsittely: -</p>
+        <div id="properties" class="property-item-container">
+            <p>Lukoston ominaisuudet:</p>
+            <div id="pinta" class='dropdown' onclick="OpenMenu('#pinta-option')">
+                <p id="pinta-option" >Pintakäsittely: -</p>
                 <div class='dropdown-content'>
                     <p class='dropdown-item' onclick="SelectSurface('Cr')">Cr</p>
                     <p class='dropdown-item' onclick="SelectSurface('HCr')">HCr</p>
@@ -41,6 +41,8 @@
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Forum 4')">Forum 4</p>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Oncut 5')">Oncut 5</p>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Polar 6')">Polar 6</p>
+                </div>
+
                 </div>
             </div>
         </div>
