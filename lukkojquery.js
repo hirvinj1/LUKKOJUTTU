@@ -1,6 +1,7 @@
 var helalista;
 var keysystem;
 var surface;
+var handlepair_u_type;
 var data = window.localStorage;
 
 $(function(){
@@ -73,19 +74,29 @@ function SelectKeySystem(valinta){
     $("#avain-option").text("Avainjärjestelmä: " + valinta);
 }
 
+function SelectHandlePair_U_Type(valinta){
+    handlepair_u_type = valinta;
+    $("#painikepari_u-option").text("Umpioven painikeparin tyyppi: " + valinta);
+}
+
 function formatKeys(input){ //malli syötteen käsittelylle, mahdollisesti tarvitsee tietokannan
     if(input == 'PULL_OUT'){
         return "ULKOPUOLEN VEDIN";
     }
     else if(input == 'HANDLEPAIR_U'){
-        return "UMPIOVEN PAINIKE";
+        return "UMPIOVEN PAINIKE" + handlepair_u_type;
     }
     else if(input == 'HANDLEPAIR_P'){
         return "PROFIILIOVEN PAINIKE"
     } 
     else if(input == 'HANDLE_IN_U'){
         return "UMPIOVEN PUOLIPAINIKE"
-    } 
+    }
+    
+    else if(input.substr(0,3) == 'ACY'){
+        return input + keysystem + " " + surface;
+    }
+
     else{
         return input
     }
