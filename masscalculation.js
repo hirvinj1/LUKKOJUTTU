@@ -1,16 +1,17 @@
 var helalista;
 var menuoptions;
-var keysystem;
-var surface;
-var handlepair_u_type;
+var keysystem; // 0
+var surface; // 1
+var handlepair_u_type; // 2
+var exit_handle_type; // 3
+var necessary_options = [keysystem,surface,handlepair_u_type,exit_handle_type]; // slightly awkward but works. Above comments tell which variable goes to what index
 var data = window.localStorage;
 
 $(function(){
     $.getJSON('https://api.myjson.com/bins/qv4tb',function(json){
         helalista = json;
     });
-
-    $.getJSON('https://api.myjson.com/bins/jsc4n',function(json){
+    $.getJSON('https://api.myjson.com/bins/lkfzz',function(json){
         menuoptions = json;
         // following loops build the menuitems used in the application
         for(i = 0; i < menuoptions.surfaces.length; i++){
@@ -22,15 +23,12 @@ $(function(){
             menuitem = "<p class='dropdown-item' onclick=\"SelectKeySystem('"+menuoptions.keysystems[i]+"')\">"+menuoptions.keysystems[i]+"</p>";
             $('#keysystem-option-items').append(menuitem);
         }
-        // CONTINUE FROM HERE
-        /* Commented section doesn't work
-        console.log(menuoptions.handle-u-types);
-        for(i = 0; i < menuoptions.handle-u-types[i].length; i++){
-            menuitem  ="<p class='dropdown-item' onclick=\"SelectHandlePair_U_Type('"+menuoptions.handle-u-types[i]+"')\">"+menuoptions.handle-u-types[i]+"</p>";
+
+        for(i = 0; i < menuoptions.handlepair_u_types[i].length; i++){
+            menuitem  ="<p class='dropdown-item' onclick=\"SelectHandlePair_U_Type('"+menuoptions.handlepair_u_types[i]+"')\">"+menuoptions.handlepair_u_types[i]+"</p>";
             $('#handlepair-u-option-items').append(menuitem);
         }
-        */
-    });
+        });
 });
 
 $(document).ready(function(){
@@ -39,26 +37,22 @@ $(document).ready(function(){
     }
 });
 
-/*
-$(document).ready(function(){
-    $('.dropdown').click(function(){
-        //alert("Kukkuu!");  korvataan oikealla implementaatiolla
-        $('.dropdown-content').animate({display: 'block'});
-    }); 
-});
-*/
 
-function BuildMenus(menuoptions){
-    
-}
 
 function Help(){
     // Korostaa vuorollaan työkalurivit ja selittää työkalun käytön
 }
 
 function MassCalculate(){
-    var product_list = [];
-    var helat = $('[id*="flex"]');
+    console.log(necessary_options);
+    for(i = 0; i < necessary_options.length; i++){
+        if(necessary_options[i] === undefined){
+            alert(""); // Ilmoitus puuttuvista arvoista. Lisää korostukset!!!
+            return 0; //paluuarvo epäonnistuneelle suoritukselle
+        }
+    }
+    var product_list = []; // alustetaan muuttuja tuotteiden keruuta varten
+    var helat = $('[id*="flex"]'); //poimitaan heloitustunnukset syötekentistä
     for (i = 0; i < helat.length;i++){ // käydään läpi syötetyt helat järjestyksessä
         for (j = 0;j < helalista.length;j++){ //verrataan syötettyjä heloja tietokantaan
             if (helat[i].value == helalista[j].id){ // osuman löytyessä kerätään tuotteet listaan
@@ -68,24 +62,25 @@ function MassCalculate(){
             }
         }
     } // looppauksen jälkeen muodostetaan massaluettelo
-    console.log(product_list);
-    var massalista = {}
-    for (i = 0; i< product_list.length;i++){
-        if (product_list[i] in massalista){
+    console.log(product_list); // loki tarkistelua varten
+    var massalista = {} // alustetaan muuttuja tulostetta varten. Myöhemmin pohja *.csv tiedostolle
+    for (i = 0; i< product_list.length;i++){ // käydään läpi kerätyt tuotteet
+        if (product_list[i] in massalista){ // jos tuote on jo esiintynyt listassa aiemmin, lisätään sen määrää yhdellä
             massalista[product_list[i]] += 1;
         }
-        else {
-            massalista[product_list[i]] = 1;
+        else { //jos tuote ei ole esiintynyt aiemmin, annetaan sille määräksi 1.
+            massalista[product_list[i]] = 1; 
         }
     }
-    var tulos = $('#laskentatulos');
+    var tulos = $('#laskentatulos'); // muuttuja tulosteen paikkaa varten
     tulos.empty(); //Poista vanha sisältö tulostaulusta tai ainakin varmista että on tyhjä
-    var avaimet = Object.keys(massalista);
-    for(i = 0; i < avaimet.length;i++){
-        var rivi = formatKeys(avaimet[i]) + ' : ' + massalista[avaimet[i]] + '\n';
-        tulos.append(rivi);
-        tulos.append('<br>');
+    var avaimet = Object.keys(massalista); // tee tuotteiden nimistä oma listansa
+    for(i = 0; i < avaimet.length;i++){ // käy tuotteiden nimiä läpi
+        var rivi = formatKeys(avaimet[i]) + ' : ' + massalista[avaimet[i]] + '\n'; // Muodostetaan riville oikea nimi valittujen ominaisuuksien perusteella.
+        tulos.append(rivi+'<br>'); // lisätään rivi tulosteeseen ja siirrytään seuraavalle riville
+        tulos.append('<br>'); 
     }
+return 1; // Paluuarvo onnistuneelle funktion suoritukselle
 }
 
  function AddRow(){
@@ -103,7 +98,7 @@ function ParseProducts(){
 }
 
 function SelectSurface(valinta){
-    surface = valinta;
+    necessary_options.surface = valinta;
     $("#pinta-option").text("Pintakäsittely: " + valinta);
     
 }
@@ -115,7 +110,7 @@ function SelectKeySystem(valinta){
 
 function SelectHandlePair_U_Type(valinta){
     handlepair_u_type = valinta;
-    $("#painikepari_u-option").text("Umpioven painikeparin tyyppi: " + valinta);
+    $("#handlepair-u-option").text("Umpioven painikeparin tyyppi: " + valinta);
 }
 
 function formatKeys(input){ //malli syötteen käsittelylle, mahdollisesti tarvitsee tietokannan
