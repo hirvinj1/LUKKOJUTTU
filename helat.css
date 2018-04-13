@@ -10,7 +10,9 @@ body {
   padding-left: 20px;
   padding-bottom: 6rem;
   min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  color: #434343;
 }
 
 div {
