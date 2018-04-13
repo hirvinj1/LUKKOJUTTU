@@ -1,7 +1,64 @@
     {
     "surfaces":["Aho","Apr","Cr","CrHa","Erik","Gra","HaLa","Har","HCr","Ki","KiLa","KuLa","Mme","MsHaLa","MsKiLa","Mus","Ni","NiHa","NiHaLa"],
     "keysystems":["Classic","Protec","Protec 2","Protec 2 Cliq","Sento","Sentry"],
-    "handlepair_U_types":[],
-    "handle-p-types":[]
+    "handlepair_u_types":[
+        "Parlament 2",
+        "Tunne 3",
+        "Forum 4",
+        "Oncut 5",
+        "Polar 6",
+        "Duetto 8",
+        "Domus 12",
+        "Prime 15",
+        "Parlament 22",
+        "Jousi 25",
+        "Kyynärpainike 29",
+        "6647",
+        "Presto 3-16",
+        "Presto 3-16S",
+        "Presto 3-16SS",
+        "Presto 3-20",
+        "Inoxi 3-19",
+        "Inoxi 3-19S",
+        "Inoxi 3-19SS",
+        "Inoxi 3-19K",
+        "Consul 110",
+        "Pukinsarvi 180"
+    ],
+    
+    "handlepair_u_light_types":[
+        "Forum 4",
+        "Polar 6",
+        "Enter 10",
+        "Prime 15",
+        "Polarita 16",
+        "Interia 19"
+    ],
+
+    "handlepair_p_types":[
+        "Parlament 2",
+        "Tunne 3",
+        "Forum 4",
+        "Oncut 5",
+        "Polar 6",
+        "Duetto 8",
+        "Prime 15",
+        "Parlament 22",
+        "Presto 3-16",
+        "Presto 3-16S",
+        "Presto 3-16SS",
+        "Inoxi 3-19S",
+        "Inoxi 3-19SS",
+        "Consul 110"
+    ],
+
+    "exit_handle_types":[
+        "Exo 28",
+        "Forum 4 Exit",
+        "Polar 6 Exit",
+        "Presto 3-20 Exit",
+        "Inoxi 3-19 Exit",
+        "Inoxi 3-19K Exit"
+    ]
     }
 
