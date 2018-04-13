@@ -6,45 +6,36 @@
         <title>Tarjouslaskentamalli (beta)</title>
         <link href="helat.css" rel="stylesheet" type="text/css"/>
         <link href="jquery.flexdatalist.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:400,700">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="lukkojquery.js"></script>
         <script src="jquery.flexdatalist.min.js"></script>
     </head>
     <body>
         <div id="properties" class="property-item-container">
-            <p>Lukoston ominaisuudet:</p>
-            <div id="pinta" class='dropdown' onclick="OpenMenu('#pinta-option')">
+            <div>
+                    <p>Lukoston ominaisuudet:</p>
+            </div>
+            <div id="pinta" class='dropdown'>
                 <p id="pinta-option" >Pintakäsittely: -</p>
-                <div class='dropdown-content'>
-                    <p class='dropdown-item' onclick="SelectSurface('Cr')">Cr</p>
-                    <p class='dropdown-item' onclick="SelectSurface('HCr')">HCr</p>
-                    <p class='dropdown-item' onclick="SelectSurface('APr')">APr</p>
-                    <p class='dropdown-item' onclick="SelectSurface('KiLa')">KiLa</p>
-                    <p class='dropdown-item' onclick="SelectSurface('HaLa')">HaLa</p>
-                </div>
+                <div id ="surf-option-items" class='dropdown-content'></div>
             </div>
-            <div id="avain" class='dropdown'>
-                <p id="avain-option">Avainjärjestelmä: -</p>
-                <div class='dropdown-content'>
-                    <p class='dropdown-item' onclick="SelectKeySystem('Classic')">Classic</p>
-                    <p class='dropdown-item' onclick="SelectKeySystem('Protec')">Protec</p>
-                    <p class='dropdown-item' onclick="SelectKeySystem('Protec 2')">Protec 2</p>
-                    <p class='dropdown-item' onclick="SelectKeySystem('Sento')">Sento</p>
-                    <p class='dropdown-item' onclick="SelectKeySystem('Sentry')">Sentry</p>
-                </div>
+            <div id="keysystem" class='dropdown'>
+                <p id="keysystem-option">Avainjärjestelmä: -</p>
+                <div id ="keysystem-option-items" class='dropdown-content'></div>
             </div>
-            <div id="painikepari_u" class='dropdown'>
-                <p id="painikepari_u-option">Umpioven painikeparin tyyppi: -</p>
-                <div class='dropdown-content'>
+            <div id="handlepair_u" class='dropdown'>
+                <p id="handlepair_u-option">Umpioven painikeparin tyyppi: -</p>
+                <div id="handlepair-u-option-items" class='dropdown-content'>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Parlament 2')">Parlament 2</p>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Tunne 3')">Tunne 3</p>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Forum 4')">Forum 4</p>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Oncut 5')">Oncut 5</p>
                     <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Polar 6')">Polar 6</p>
                 </div>
-
-                </div>
             </div>
+
+        </div>
         </div>
             <div id="heloitustunnukset_column" class='column'>
             <p>Syötä helatunnukset kenttiin alapuolella:</p>

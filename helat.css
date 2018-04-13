@@ -15,16 +15,20 @@ body {
   color: #434343;
 }
 
+
 div {
   border: 2px solid grey;
-}
-#helat {
-  margin: 10px;
+  font-family: "Heebo", sans-serif;
 }
 
-/**
-  * Footer Styles
-  */
+.div-button {
+  color: blue;
+  transition: color 0.5s;
+}
+
+.div-button:hover {
+  color: red;
+}
 
 footer {
   position: absolute;
@@ -41,15 +45,10 @@ footer {
   float: left;
 }
 
-#AddRowButton {
-  width: 100%;
-  transition: width 2s;
-}
-
-#AddRowButton:hover {
-  background-color: aqua;
-  width: 50%;
-  
+p {
+  transition: color 0.3s;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 #laskentatulos{
@@ -57,13 +56,18 @@ footer {
     float: left;
 }
 
+div:hover {
+  color:rgba(0,0,0,1);
+}
+
 .dropdown {
-  background-color: darkcyan;
+  background-color: lightgrey;
   position: relative;
   display: inline-block;
   min-width: 200px;
   text-align: center;
   vertical-align: middle;
+  font-family: "Heebo", sans-serif;
 }
 
 .dropdown-content {
@@ -71,17 +75,23 @@ footer {
   position: absolute;
   background-color: #f9f9f9;
   width: inherit;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  padding: 0px;
   z-index: 1;
   text-align: inherit;
 }
 
 .dropdown-content p {
-  border: 1px dashed blue;
+  border: 1px solid black;
   padding: 0px;
   margin: 0px;
+  transition: background-color 0.2s;
+  width: inherit;
+}
+
+.dropdown-content p:hover{
+  background-color: grey;
 }
 
 
