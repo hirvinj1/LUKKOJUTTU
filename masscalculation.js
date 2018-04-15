@@ -24,9 +24,14 @@ $(function(){
             $('#keysystem-option-items').append(menuitem);
         }
 
-        for(i = 0; i < menuoptions.handlepair_u_types[i].length; i++){
+        for(i = 0; i < menuoptions.handlepair_u_types.length; i++){
             menuitem  ="<p class='dropdown-item' onclick=\"SelectHandlePair_U_Type('"+menuoptions.handlepair_u_types[i]+"')\">"+menuoptions.handlepair_u_types[i]+"</p>";
             $('#handlepair-u-option-items').append(menuitem);
+        }
+
+        for(i = 0; i < menuoptions.handlepair_p_types.length; i++){
+            menuitem  ="<p class='dropdown-item' onclick=\"SelectHandlePair_P_Type('"+menuoptions.handlepair_p_types[i]+"')\">"+menuoptions.handlepair_p_types[i]+"</p>";
+            $('#handlepair-p-option-items').append(menuitem);
         }
         });
 });
@@ -99,7 +104,7 @@ function ParseProducts(){
 
 function SelectSurface(valinta){
     necessary_options.surface = valinta;
-    $("#pinta-option").text("Pintakäsittely: " + valinta);
+    $("#surface-option").text("Pintakäsittely: " + valinta);
     
 }
 
@@ -111,6 +116,11 @@ function SelectKeySystem(valinta){
 function SelectHandlePair_U_Type(valinta){
     handlepair_u_type = valinta;
     $("#handlepair-u-option").text("Umpioven painikeparin tyyppi: " + valinta);
+}
+
+function SelectHandlePair_P_Type(valinta){
+    handlepair_p_type = valinta;
+    $("#handlepair-p-option").text("Profiilioven painikeparin tyyppi: " + valinta);
 }
 
 function formatKeys(input){ //malli syötteen käsittelylle, mahdollisesti tarvitsee tietokannan

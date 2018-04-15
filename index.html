@@ -11,13 +11,16 @@
         <script src="masscalculation.js"></script>
         <script src="jquery.flexdatalist.min.js"></script>
     </head>
+    <header>
+            
+    </header>
     <body>
         <div id="properties" class="property-item-container">
-            <div>
+            <div class='dropdown'>
                     <p>Lukoston ominaisuudet:</p>
             </div>
             <div id="pinta" class='dropdown'>
-                <p id="pinta-option" >Pintakäsittely: -</p>
+                <p id="surface-option" >Pintakäsittely: -</p>
                 <div id ="surf-option-items" class='dropdown-content'></div>
             </div>
             <div id="keysystem" class='dropdown'>
@@ -26,25 +29,24 @@
             </div>
             <div id="handlepair-u" class='dropdown'>
                 <p id="handlepair-u-option">Umpioven painikeparin tyyppi: -</p>
-                <div id="handlepair-u-option-items" class='dropdown-content'>
-                    <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Parlament 2')">Parlament 2</p>
-                    <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Tunne 3')">Tunne 3</p>
-                    <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Forum 4')">Forum 4</p>
-                    <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Oncut 5')">Oncut 5</p>
-                    <p class='dropdown-item' onclick="SelectHandlePair_U_Type('Polar 6')">Polar 6</p>
-                </div>
+                <div id="handlepair-u-option-items" class='dropdown-content'></div>
             </div>
-
+            <div id="handlepair-p" class='dropdown'>
+                <p id="handlepair-p-option">Profiilioven painikeparin tyyppi: -</p>
+                <div id="handlepair-p-option-items" class='dropdown-content'></div>
+            </div>
         </div>
-        </div>
+        <div id="input-output-content">
             <div id="heloitustunnukset_column" class='column'>
             <p>Syötä helatunnukset kenttiin alapuolella:</p>
+                <!-- Tähän tulee syötekentät heloitustunnuksia varten -->
                 <div id="AddRowButton" class="div-button" onclick="AddRow()">Lis&auml&auml Rivi</div>
                 <div id="MassCalculateButton" class="div-button" onclick="MassCalculate()">Laske massat</div>
             </div>  
-            <div id="laskentatulos">
+            <div id="laskentatulos_column">
                 <p>laskentatulos</p>
             </div>
+        </div>
     </body>
     <footer>
         <p>&copy; T:mi Juho Hirvinen - 2018 </p>

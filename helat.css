@@ -6,24 +6,32 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 10px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 6rem;
   min-height: 100%;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
-  color: #434343;
+  font-size: 18px;
+  color: black;
 }
 
 
 div {
-  border: 2px solid grey;
+  box-shadow: 0,0,0,2px rgba(0,0,0,0.2);
   font-family: "Heebo", sans-serif;
+  margin: 0 0 2px 0px;
+  background-color:none;
 }
 
 .div-button {
   color: blue;
   transition: color 0.5s;
+}
+
+.property-item-container {
+  background-image: linear-gradient(to top,transparent 0%,#3583c6 80%);
 }
 
 .div-button:hover {
@@ -41,19 +49,19 @@ footer {
 }
 
 #heloitustunnukset_column {
-  width: 25%;
+  width: 50%;
   float: left;
 }
 
 p {
-  transition: color 0.3s;
+  transition: color 0.15s;
   padding-left: 2px;
   padding-right: 2px;
 }
 
-#laskentatulos{
-    width: 20%;
-    float: left;
+#laskentatulos_column {
+    width: 50%;
+    margin-left: 20px;
 }
 
 div:hover {
@@ -61,13 +69,14 @@ div:hover {
 }
 
 .dropdown {
-  background-color: lightgrey;
+  background-color: none;
   position: relative;
   display: inline-block;
   min-width: 200px;
   text-align: center;
   vertical-align: middle;
   font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
 }
 
 .dropdown-content {

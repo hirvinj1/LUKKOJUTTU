@@ -745,7 +745,7 @@
     "data_date":"11.04.2013"},
 
     {"id":"M26A-2",
-    "products":["ACY001","ALC102","AVR","ACY062","A4181","AVR","HANDLEPAIR_U","DOOR_BELL","POST_HATCH","A2014","HANDLEPAIR_U"],
+    "products":["ACY001","ALC102","AVR","ACY062","A4181","AVR","HANDLEPAIR_U","DOOR_BELL","POST_HATCH","A2014","HANDLEPAIR_U_LIGHT"],
     "classes":["FK1","FIRE","EXIT"],
     "data_date":"11.04.2013"},
 
@@ -755,7 +755,7 @@
     "data_date":"11.04.2013"},
 
     {"id":"M26B-2",
-    "products":["ACY001","ALC102","AVR","HANDLEPAIR_U","DOOR_BELL","POST_HATCH","A2014","HANDLEPAIR_U"],
+    "products":["ACY001","ALC102","AVR","HANDLEPAIR_U","DOOR_BELL","POST_HATCH","A2014","HANDLEPAIR_U_LIGHT"],
     "classes":["FK1","FIRE","EXIT"],
     "data_date":"11.04.2013"},
 
@@ -866,3 +866,7 @@
 
     ]
     
+    {"id":"M36-1(VASEN)",
+    "products":["A5165","ALA107","AVR","ADP130","ADP130","FIX150,FIXS1107130"],
+    "classes":["FK1"],
+    "data_date":"11.04.2013"},
