@@ -10,12 +10,12 @@
     "data_date":"26.09.2013"},
 
     {"id":"AP-M2-1",
-    "products":["ALC190","AC001","ADC335","ADC190","HANDLEPAIR_U","AVR"],
+    "products":["ALC190","ACY001","ADC335","ADC190","HANDLEPAIR_U","AVR"],
     "classes":["ONEFIT","EXIT","FK1"],
     "data_date":"26.09.2013"},
 
     {"id":"AP-M2-2",
-    "products":["ALC190","AC001","ADC335","ADC190","ADF3000","HANDLEPAIR_U","AVR"],
+    "products":["ALC190","ACY001","ADC335","ADC190","ADF3000","HANDLEPAIR_U","AVR"],
     "classes":["ONEFIT","EXIT","FK1"],
     "data_date":"26.09.2013"},
 
