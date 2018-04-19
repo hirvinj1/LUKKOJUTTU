@@ -302,7 +302,7 @@
     {"id":"EXP-S18-1",
     "products":["ACY080","AEL402","AVR","ADC240","ADC190","AEA280","AEA211","AEA502","PULL_OUT"],
     "classes":["EN179"],
-    "data_date":"11.04,2013"},
+    "data_date":"11.04.2013"},
 
     {"id":"EXH-S19-2",
     "products":["ACY037","APE592","ADC250","ADC250","AFD461","AEA280","AEA217","AEA501","PULL_OUT","HANDLE_IN_U_EXIT","ALE980","ALE953","ALE981","AFD101","HANDLE_IN_U_EXIT"],
@@ -862,65 +862,316 @@
     {"id":"M44B-1",
     "products":["ACY001","ALC190","AVR","ADC250","ADC152","ADC194","HANDLEPAIR_U"],
     "classes":["FK1","EXIT"],
-    "data_date":"11.04.2013"}
+    "data_date":"11.04.2013"},
 
-    {"id":"",
-    "products":[],
-    "classes":[],
-    "data_date":},
+    {"id":"M44B-2",
+    "products":["ACY001","ALC190","AVR","ADC250","ADC152","ADC194","HANDLEPAIR_U","ADF3000"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
 
-    {"id":"",
-    "products":[],
-    "classes":[],
-    "data_date":},
+    {"id":"M45-1",
+    "products":["ADC250","ADC152","ADC194","ADP136"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
     
-    {"id":"",
-    "products":[],
+    {"id":"M45-2",
+    "products":["ADC250","ADC152","ADC194","ADP136","ADF3000"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M46-1",
+    "products":["ACY001","ALC195","AVR","ADC335","ADC190","PULL_PAIR","ADP039"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M46-2",
+    "products":["ACY001","ALC195","AVR","ADC335","ADC190","PULL_PAIR","ADP039","ADF3000"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M47-1",
+    "products":["ACY001","ALC190","AVR","ADC335","ADC190","HANDLEPAIR_U"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M47-2",
+    "products":["ACY001","ALC190","AVR","ADC335","ADC190","HANDLEPAIR_U","ADF3000"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M49-1",
+    "products":["ACY001","ALC194","AVR","ACY062","A4181","AVR","ADP130","ADP130","DOOR_BELL","POST_HATCH"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M49-2",
+    "products":["ACY001","ALC194","AVR","ACY062","A4181","AVR","ADP130","ADP130","DOOR_BELL","POST_HATCH","A2014","AVR","HANDLEPAIR_U_LIGHT"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M49A-1",
+    "products":["ACY001","ALC194","AVR","ADP130","ADP130","DOOR_BELL","POST_HATCH"],
+    "classes":["FK1","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M49A-2",
+    "products":["ACY001","ALC194","AVR","ADP130","ADP130","DOOR_BELL","POST_HATCH","A2014","HANDLEPAIR_U_LIGHT"],
+    "classes":["FK1","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M50-1",
+    "products":["ACY001","ALC102","AVR","HANDLEPAIR_U"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M53-1",
+    "products":["A2014","AVR","HANDLEPAIR_U_LIGHT"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M53-2",
+    "products":["A2014","AVR","HANDLEPAIR_U_LIGHT","ADF849"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M53A-1",
+    "products":["A2024","AVR","HANDLEPAIR_U_LIGHT"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M53A-2",
+    "products":["A2024","AVR","HANDLEPAIR_U_LIGHT","ADF849","ADF849"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M55-1",
+    "products":["A2014","AVR","HANDLEPAIR_U_LIGHT","WC_KNOB"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M55A-1",
+    "products":["A2025","AVR","HANDLEPAIR_U_LIGHT"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M57-1",
+    "products":["A4249","AVR","ADP118","WC_KNOB"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M58-1",
+    "products":["A4238","PULL_WOOD"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M59-1",
+    "products":["A5153","AKD201"],
     "classes":[],
-    "data_date":},
+    "data_date":"16.04.2013"},
+    
+    {"id":"M60-1",
+    "products":["ACL100"],
+    "classes":[],
+    "data_date":"11.04.2013"},
+
+    {"id":"M61-1",
+    "products":["APL340","APL340"],
+    "classes":["FK1"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M70-2",
+    "products":["ACY001","ACY037","ALC120","ADC240","ADC191","PULL_PAIR","ADF900","ADP039","FIX271"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M80-1",
+    "products":["ACY070","ACY066","ALC130","AVR","ADC335","ADC190","ADP131","ADP131"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M80-2",
+    "products":["ACY070","ACY066","ALC130","AVR","ADC335","ADC190","ADP131","ADP131","ADF900"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M81-1",
+    "products":["ACY066","ALC305","ACY065","ALC306","ADC240","ADC199","HANDLEPAIR_P"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M81-2",
+    "products":["ACY066","ALC305","AVR","ACY065","ALC306","AVR","ADC240","ADC199","HANDLEPAIR_P","ADF3000","ADF2003"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M82-2",
+    "products":["ACY070","ACY066","ALC130","AVR","ADC240","ADC191","ADP131","ADP131","ADF900","FIX271"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M83-1",
+    "products":["ACY001","ALC194","AVR","ACY062","A4181","AVR","ADC240","ADC199","ADP131","ADP131"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M83-2",
+    "products":["ACY001","ALC194","AVR","ACY062","A4181","AVR","ADC240","ADC199","ADP131","ADP131","ADF3000","ADF2003"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M84-1",
+    "products":["ACY001","ALC190","AVR","ACY062","A4181","AVR","ADC240","ADC199","HANDLEPAIR_U"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M84-2",
+    "products":["ACY001","ALC190","AVR","ACY062","A4181","AVR","ADC240","ADC199","HANDLEPAIR_U","ADF3000","ADF2003"],
+    "classes":["FK1-3","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M85-1",
+    "products":["ACY001","ALC102","AVR","HANDLEPAIR_U"],
+    "classes":["FK1","FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M86-1",
+    "products":["ACY001","ALC194","AVR","ADC335","ADC190","PULL_PAIR"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M86-2",
+    "products":["ACY001","ALC194","AVR","ADC335","ADC190","PULL_PAIR","ADF3000"],
+    "classes":["FK1","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M87-1",
+    "products":["ACY071","A4181","AVR"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M88-1",
+    "products":["ACY001","ALC197","AVR","ADP131"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M89-1",
+    "products":["ACY066","ALC300","AVR","ADC240","ADC199","PULL_WIRE"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M89-2",
+    "products":["ACY066","ALC300","AVR","ADC240","ADC199","PULL_WIRE","ADF3000"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M91-1",
+    "products":["ACY037","ALE184","AVR","ADC240","ADC199","PULL_OUT","APBE002"],
+    "classes":["FIRE"],
+    "data_date":"EXIT"},
+
+    {"id":"M91-2",
+    "products":["ACY037","ALE184","AVR","ADC240","ADC199","PULL_OUT","APBE002","ADF3000"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M97-1",
+    "products":["ALC290","AVR","ADC240","ADC199","HANDLEPAIR_U"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M97-2",
+    "products":["ALC290","AVR","ADC240","ADC199","HANDLEPAIR_U","ADF3000"],
+    "classes":["FIRE","EXIT"],
+    "data_date":"11.04.2013"},
+
+    {"id":"M101A-1",
+    "products":["ALC290","AVR","ADC250","ADC152","ADC194","HANDLEPAIR_U"],
+    "classes":["EXIT"],
+    "data_date":"23.09.2013"},
+
+    {"id":"M101A-2",
+    "products":["ALC290","AVR","ADC250","ADC152","ADC194","HANDLEPAIR_U","ADF3000"],
+    "classes":["EXIT"],
+    "data_date":"23.09.2013"},
+
+    {"id":"M104-1",
+    "products":["ALC290","AVR","HANDLEPAIR_U","ALH002"],
+    "classes":["EXIT"],
+    "data_date":"10.04.2013"},
+
+    {"id":"M104-2",
+    "products":["ALC290","AVR","HANDLEPAIR_U","ALH002","ADF3000"],
+    "classes":["EXIT"],
+    "data_date":"10.04.2013"},
+
+    {"id":"M105-1",
+    "products":["ALC291","AVR","HANDLEPAIR_U","WC_KNOB"],
+    "classes":["EXIT"],
+    "data_date":"10.04.2013"},
+
+    {"id":"M105A-1",
+    "products":["ALC290","AVR","HANDLEPAIR_U","ALH002","ADC335","ADC190"],
+    "classes":["EXIT"],
+    "data_date":"10.04.2013"},
+
+    {"id":"M105B-1",
+    "products":["ALC291","AVR","HANDLEPAIR_U","WC_KNOB"],
+    "classes":["EXIT"],
+    "data_date":"10.04.2013"},
+
+    {"id":"M118-1",
+    "products":["ACY5190","ARI211"],
+    "classes":["EXIT"],
+    "data_date":"23.09.2013"},
+
+    {"id":"M118-2",
+    "products":["ACY5190","ARI211","ADF849","ADF849"],
+    "classes":["EXIT"],
+    "data_date":"23.09.2013"},
+
+    {"id":"M119-1",
+    "products":["A2024","AVR","HANDLEPAIR_U_LIGHT","WC_KNOB"],
+    "classes":["EXIT"],
+    "data_date":"10.04.2013"},
+
+    {"id":"M120-1",
+    "products":["ACY037","ALE180","AVR","HANDLEPAIR_U","A4249","WC_KNOB","AVR"],
+    "classes":["EXIT"],
+    "data_date":"11.04.2013"},
 
     {"id":"",
     "products":[],
     "classes":[],
-    "data_date":},
+    "data_date":""},
 
     {"id":"",
     "products":[],
     "classes":[],
-    "data_date":},
+    "data_date":""},
 
     {"id":"",
     "products":[],
     "classes":[],
-    "data_date":},
+    "data_date":""},
 
     {"id":"",
     "products":[],
     "classes":[],
-    "data_date":},
+    "data_date":""},
 
     {"id":"",
     "products":[],
     "classes":[],
-    "data_date":},
+    "data_date":""},
 
     {"id":"",
     "products":[],
     "classes":[],
-    "data_date":},
-
-    {"id":"",
-    "products":[],
-    "classes":[],
-    "data_date":},
+    "data_date":""},
 
     ]
     
     {"id":"",
     "products":[],
     "classes":[],
-<<<<<<< HEAD
-    "data_date":},
-=======
     "data_date":""},
->>>>>>> 49379f227fa3a0c33ea0863ec57ade9273412032
