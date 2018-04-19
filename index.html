@@ -12,40 +12,47 @@
         <script src="jquery.flexdatalist.min.js"></script>
     </head>
     <header>
-            
+		<a class="logo" href="fi">
+			<img src="https://www.lukkoliikkeet.fi/newsite/img/logo.png" alt="">
+		</a>
+		<h1> Massalaskentatyökalu (beta)</h1>
     </header>
     <body>
         <div id="properties" class="property-item-container">
-            <div class='dropdown'>
-                    <p>Lukoston ominaisuudet:</p>
-            </div>
             <div id="pinta" class='dropdown'>
-                <p id="surface-option" >Pintakäsittely: -</p>
+                <p id="surface-option" >Pintakäsittely:<br> -</p>
                 <div id ="surf-option-items" class='dropdown-content'></div>
             </div>
             <div id="keysystem" class='dropdown'>
-                <p id="keysystem-option">Avainjärjestelmä: -</p>
+                <p id="keysystem-option">Avainjärjestelmä:<br> -</p>
                 <div id ="keysystem-option-items" class='dropdown-content'></div>
             </div>
             <div id="handlepair-u" class='dropdown'>
-                <p id="handlepair-u-option">Umpioven painikeparin tyyppi: -</p>
+                <p id="handlepair-u-option">Umpiovien painikemalli:<br>-</p>
                 <div id="handlepair-u-option-items" class='dropdown-content'></div>
             </div>
             <div id="handlepair-p" class='dropdown'>
-                <p id="handlepair-p-option">Profiilioven painikeparin tyyppi: -</p>
+                <p id="handlepair-p-option">Profiiliovien painikemalli:<br>-</p>
                 <div id="handlepair-p-option-items" class='dropdown-content'></div>
             </div>
+<<<<<<< HEAD
             <!-- exitpainike-->
+=======
+            <div id="lighthandlepair" class='dropdown'>
+                <p id="lighthandlepair-option">Väliovien painikemalli:<br>-</p>
+                <div id="lighthandlepair-option-items" class="dropdown-content"></div>
+            </div>
+>>>>>>> 49379f227fa3a0c33ea0863ec57ade9273412032
         </div>
         <div id="input-output-content">
             <div id="heloitustunnukset_column" class='column'>
             <p>Syötä helatunnukset kenttiin alapuolella:</p>
                 <!-- Tähän tulee syötekentät heloitustunnuksia varten -->
-                <div id="AddRowButton" class="div-button" onclick="AddRow()">Lis&auml&auml Rivi</div>
                 <div id="MassCalculateButton" class="div-button" onclick="MassCalculate()">Laske massat</div>
-            </div>  
+            </div>
+            <div class='flex-placeholder'></div>  
             <div id="laskentatulos_column">
-                <p>laskentatulos</p>
+                <p>Valitse ensin lukoston ominaisuudet, minkä jälkeen syötä heloitustunnukset syötekenttiin vasemmalla. Lopuksi paina "Laske massat"-nappia ja laskentatulos ilmestyy tähän.</p>
             </div>
         </div>
     </body>
