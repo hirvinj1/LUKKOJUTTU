@@ -23,13 +23,16 @@ body {
   font-family: "Heebo", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  color: black;
+  color: rgb(67,67,67);
+  box-sizing: border-box;
   
 }
 
 h1 {
-	font-style: italic;
 	text-align: left;
+	float:right;
+	width: 100%;
+	text-transform: uppercase;
 }
 
 div {
@@ -54,18 +57,33 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 0.3rem;
   background-color: #efefef;
   text-align: center;
+  vertical-align: middle;
+  max-height: 50px;
+}
+
+footer p{
+	margin: auto;
+	font-size: 12px;
+	font-style: strong;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  font-family: "Heebo", sans-serif;
   width: 100%;
-  display: table;
   height: 100px;
+  display: table;
   text-align: center;
   vertical-align: bottom;
-  background-color: #efefef;
+  background-color: rgba(245,245,245,0.8);
+}
+
+#header-blocker {
+  height: 100px;
 }
 
 #heloitustunnukset_column {
@@ -93,37 +111,35 @@ header {
   margin-bottom: 0;
 }
 
-.inputrow {
-  background-color: teal;
+.inputrow{
+  
   display: flex;
   }
+  
+ input:focus{
+	background-color: yellow; 
+ }
 
 #input-output-content {
-  margin-top: 10px;
   display:flex;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  vertical-align: middle;
+  margin-right: 8px;
+  margin-left: 0;
 }
 
-.property-item-container {
-  background-image: linear-gradient(to top,transparent 50%,#3583c6 80%);
+.property-item-container-column {
   display: flex;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  
+  flex-direction: column;
+  max-width: 33%;
+  min-width: 200px;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
-.property-item-container div{
-  border-width: 0 2px;
-  border-style: solid;
-  background-color: rgba(230,230,230,1);
+.property-item-container-column div{
   transition: background-color 0.2s ease-in-out;
+  font-size: 18px;
+  font-weight: 500;
 }
-
-.property.item-container div:hover{
-  background-color: rgba(240,240,240,0.2);
-}
-
-
 
 p {
   transition: color 0.15s ease-in-out;
@@ -137,15 +153,18 @@ p {
 }
 
 #laskentatulos_column {
+	padding-top: 18px;
     width: 50%;
     margin:inherit;
     float: right;
 	vertical-align: middle;
+	text-align: center;
 }
 
 #laskentatulos_column p{
 	width: 70%;
 	vertical-align: middle;
+	margin: auto;
 }
 
 div:hover {
@@ -153,25 +172,36 @@ div:hover {
 }
 
 .dropdown {
+  margin-left: 2px;
+  margin-right: 2px;
   flex: 1;
+  height: 50px;
   background-color: none;
   position: relative;
   display: inline-block;
   text-align: center;
+  text-transform: uppercase;
   vertical-align: middle;
   font-family: "Heebo", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 200px;
+  box-shadow: 0 2px 2px 0px rgb(255,0,0);
+  transition: box-shadow 0.15s ease-in-out;
 }
 
 .dropdown p {
-  background: transparent 100%;
   vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  left: 200px;
+  top: 0px;
+  background-color: white;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 0px;
@@ -180,7 +210,6 @@ div:hover {
 }
 
 .dropdown-content p {
-  border: 1px solid black;
   padding: 0px;
   margin: 0px;
   transition: background-color 0.2s ease-in-out;
@@ -189,6 +218,11 @@ div:hover {
 
 .dropdown-content p:hover{
   background-color: grey;
+}
+
+.dropdown:hover {
+  background-color:	#9BD5FC;
+  box-shadow: 4px 4px 4px 4px rgb(255,255,0);
 }
 
 .dropdown:hover .dropdown-content {

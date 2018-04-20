@@ -53,7 +53,7 @@ $(document).ready(function(){
 function AddRow(i){ // Luo syöterivin heloitustunnusten laatua ja määrää varten. KORJAA RIVINMUODOSTUS!!!!
     spot = $("#MassCalculateButton");
     value_id = "'flxamount-"+ String(i)+"'";
-    spot.before("<div class='inputrow'><input type='text' class='flexdatalist'/><input type='number' id="+value_id+"'></div>");
+    spot.before("<div class='inputrow'><input type='text' placeholder='esim. M26-1' class='flexdatalist'/><input type='number' placeholder='Määrä:' id="+value_id+"'></div>");
     $('.flexdatalist:last').flexdatalist({
         minLength : 1,
         data: "https://api.myjson.com/bins/wnmdb",
@@ -114,7 +114,7 @@ function MassCalculate(){
     console.log(necessary_options);
     for(i = 0; i < necessary_options.length; i++){
         if(necessary_options[i] === undefined){
-            alert(""); // Ilmoitus puuttuvista arvoista. Lisää korostukset!!!
+            alert("Kaikkia tarvittavia ominaisuuksia ei ole valittu!"); // Ilmoitus puuttuvista arvoista. Lisää korostukset!!!
             return 0; //paluuarvo epäonnistuneelle suoritukselle. Laskentaa ei suoriteta.
         }
     }
@@ -155,29 +155,33 @@ function SelectSurface(valinta){
     surface = valinta;
     necessary_options[0] = valinta;
     $("#surface-option").html("Pintakäsittely:<br>" + valinta);
-    
+    $("#pinta").css("box-shadow","0 2px 2px 0px rgb(0,255,0)");
 }
 
 function SelectKeySystem(valinta){
     keysystem = valinta;
     necessary_options[1] = valinta;
     $("#keysystem-option").html(" Avainjärjestelmä:<br>" + valinta);
+	$("#keysystem").css("box-shadow","0 2px 2px 0px rgb(0,255,0)");
 }
 
 function SelectHandlePair_U_Type(valinta){
     handlepair_u_type = valinta;
     necessary_options[2] = valinta;
     $("#handlepair-u-option").html("Umpiovien painikemalli:<br>" + valinta);
+	$("#handlepair-u").css("box-shadow","0 2px 2px 0px rgb(0,255,0)");
 }
 
 function SelectHandlePair_P_Type(valinta){
     handlepair_p_type = valinta;
     necessary_options[3] = valinta;
     $("#handlepair-p-option").html("Profiiliovien painikemalli:<br>" + valinta);
+	$("#handlepair-p").css("box-shadow","0 2px 2px 0px rgb(0,255,0)");
 }
 
 function SelectLightHandleType(valinta){
     handlepair_light_type = valinta;
     necessary_options[4] = valinta;
     $("#lighthandlepair-option").html("Väliovien painikemalli:<br>" + valinta);
+	$("#lighthandlepair").css("box-shadow","0 2px 2px 0px rgb(0,255,0)");
 }
