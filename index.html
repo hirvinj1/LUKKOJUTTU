@@ -3,6 +3,7 @@
 <html>
     <head>
         <meta charset='utf-8'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tarjouslaskentamalli (beta)</title>
         <link href="helat.css" rel="stylesheet" type="text/css"/>
         <link href="jquery.flexdatalist.min.css" rel="stylesheet" type="text/css"/>
@@ -12,13 +13,15 @@
         <script src="jquery.flexdatalist.min.js"></script>
     </head>
     <header>
-		<a class="logo" href="fi">
+		<a class="logo">
 			<img src="https://www.lukkoliikkeet.fi/newsite/img/logo.png" alt="">
 		</a>
-		<h1> Massalaskentatyökalu (beta)</h1>
+		<h1> Massalaskentatyökalu (beta)</h1><br>
     </header>
     <body>
-        <div id="properties" class="property-item-container">
+		<div id="header-blocker"></div>
+        <div id="input-output-content">
+		<div id="properties" class="property-item-container-column">
             <div id="pinta" class='dropdown'>
                 <p id="surface-option" >Pintakäsittely:<br> -</p>
                 <div id ="surf-option-items" class='dropdown-content'></div>
@@ -40,7 +43,6 @@
                 <div id="lighthandlepair-option-items" class="dropdown-content"></div>
             </div>
         </div>
-        <div id="input-output-content">
             <div id="heloitustunnukset_column" class='column'>
             <p>Syötä helatunnukset kenttiin alapuolella:</p>
                 <!-- Tähän tulee syötekentät heloitustunnuksia varten -->
@@ -53,6 +55,7 @@
         </div>
     </body>
     <footer>
-        <p>&copy; T:mi Juho Hirvinen - 2018 </p>
+        <p style="float:left"><strong>&copy; Suomen Turvaurakoitsijaliitto - 2018 </strong></p>
+		<p style="float:right"><strong>Developed by:T:mi Juho Hirvinen </strong></p>
     </footer>
 </html>
