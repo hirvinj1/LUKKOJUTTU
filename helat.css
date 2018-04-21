@@ -3,47 +3,45 @@ html {
 }
 
 .logo {
-	vertical-align: middle;
-	display: table-cell;
+  vertical-align: middle;
+  margin: auto;
 }
 
 .logo img{
-	display: block;
-	vertical-align: middle;
+  flex: 1;
+	margin:auto;
 }
 
 body {
   position: relative;
   margin: 0;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 6rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
   min-height: 100%;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.5vmin;
   color: rgb(67,67,67);
-  box-sizing: border-box;
   
 }
 
 h1 {
-	text-align: left;
 	float:right;
 	width: 100%;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  margin:auto;
+  display: table-cell;
 }
 
 div {
   font-family: "Heebo", sans-serif;
-  margin: 0 0 2px 0px; 
+  margin: 0 0 0.3rem 0; 
 }
 
 .div-button {
   color: blue;
   transition: color 0.5s;
-  width: 100%;
+  min-width: 3rem;
   text-align: center;
   background-color: lightgrey;
 }
@@ -61,13 +59,11 @@ footer {
   background-color: #efefef;
   text-align: center;
   vertical-align: middle;
-  max-height: 50px;
 }
 
 footer p{
 	margin: auto;
-	font-size: 12px;
-	font-style: strong;
+	font-size: 0.8rem;
 }
 
 header {
@@ -75,20 +71,28 @@ header {
   top: 0;
   font-family: "Heebo", sans-serif;
   width: 100%;
-  height: 100px;
-  display: table;
+  height: 6rem;
+  display: flex;
   text-align: center;
-  vertical-align: bottom;
+  vertical-align: middle;
   background-color: rgba(245,245,245,0.8);
 }
 
 #header-blocker {
-  height: 100px;
+  height: 6rem;
+}
+
+#MassCalculateButton {
+  background-color: gray;
+  vertical-align: middle;
+  margin: auto;
+  flex: 1;
+  text-transform: uppercase;
 }
 
 #heloitustunnukset_column {
-  width: 33.3%;
   margin: inherit;
+  vertical-align: middle;
 }
 
 .inputrow {
@@ -104,7 +108,7 @@ header {
 }
 
 .inputrow .div-number{
-  width: 29px;
+  width: 3rem;
   background-color: grey;
   text-align: center;
   vertical-align: middle;
@@ -112,7 +116,6 @@ header {
 }
 
 .inputrow{
-  
   display: flex;
   }
   
@@ -120,49 +123,42 @@ header {
 	background-color: yellow; 
  }
 
-#input-output-content {
+.input-output-content {
   display:flex;
-  margin-right: 8px;
+  margin-right: 1rem;
   margin-left: 0;
 }
 
 .property-item-container-column {
   display: flex;
   flex-direction: column;
-  max-width: 33%;
-  min-width: 200px;
-  margin-right: 20px;
-  margin-top: 5px;
+  width: 15rem;
+  margin-right: 2rem;
+  background-color: white;
 }
 
 .property-item-container-column div{
-  transition: background-color 0.2s ease-in-out;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  background-color: white;
 }
 
 p {
   transition: color 0.15s ease-in-out;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.flex-placeholder{
-  flex: 1;
-  width-max: 100px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 #laskentatulos_column {
-	padding-top: 18px;
-    width: 50%;
-    margin:inherit;
-    float: right;
+	padding-top: 1rem;
+  margin:inherit;
+  float: right;
 	vertical-align: middle;
-	text-align: center;
 }
 
 #laskentatulos_column p{
-	width: 70%;
+  text-align: justify;
 	vertical-align: middle;
 	margin: auto;
 }
@@ -172,10 +168,7 @@ div:hover {
 }
 
 .dropdown {
-  margin-left: 2px;
-  margin-right: 2px;
   flex: 1;
-  height: 50px;
   background-color: none;
   position: relative;
   display: inline-block;
@@ -183,46 +176,46 @@ div:hover {
   text-transform: uppercase;
   vertical-align: middle;
   font-family: "Heebo", sans-serif;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  width: 200px;
-  box-shadow: 0 2px 2px 0px rgb(255,0,0);
-  transition: box-shadow 0.15s ease-in-out;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0.2rem 0.2rem rgba(247, 42, 42, 0.6);
+  transition: box-shadow 1s ease-in-out;
+  width: 15rem;
 }
 
 .dropdown p {
   vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 200px;
-  top: 0px;
+  top: 0;
+  left: 15rem;
   background-color: white;
   width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 0px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+  padding: 0;
   z-index: 1;
   text-align: center;
+  text-transform: none;
 }
 
 .dropdown-content p {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   transition: background-color 0.2s ease-in-out;
   width: inherit;
 }
 
 .dropdown-content p:hover{
-  background-color: grey;
+  background-color: lightblue;
 }
 
 .dropdown:hover {
-  background-color:	#9BD5FC;
-  box-shadow: 4px 4px 4px 4px rgb(255,255,0);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgb(235, 235, 102);
 }
 
 .dropdown:hover .dropdown-content {
@@ -231,5 +224,9 @@ div:hover {
 
 .property-item-container{
   display: flex;
+}
+
+.flex-number{
+  width: 4rem;
 }
 

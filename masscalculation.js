@@ -45,7 +45,7 @@ $(function(){
 });
 
 $(document).ready(function(){
-    for (i= 0;i < 5;i++){ // Silmukka luo alustavasti 5 riviä heloitustunnuksille, kun muu dokumentti on ladattu
+    for (i= 0;i < 10;i++){ // Silmukka luo alustavasti 5 riviä heloitustunnuksille, kun muu dokumentti on ladattu
         AddRow(i);
     }
 });
@@ -53,27 +53,28 @@ $(document).ready(function(){
 function AddRow(i){ // Luo syöterivin heloitustunnusten laatua ja määrää varten. KORJAA RIVINMUODOSTUS!!!!
     spot = $("#MassCalculateButton");
     value_id = "'flxamount-"+ String(i)+"'";
-    spot.before("<div class='inputrow'><input type='text' placeholder='esim. M26-1' class='flexdatalist'/><input type='number' placeholder='Määrä:' id="+value_id+"'></div>");
+    spot.before("<div class='inputrow'><input type='text' placeholder='esim. M26-1' class='flexdatalist'/><input type='number' class='flex-number' placeholder='Määrä:' id="+value_id+"'></div>");
     $('.flexdatalist:last').flexdatalist({
         minLength : 1,
         data: "https://api.myjson.com/bins/wnmdb",
         searchIn : "id"
     });
-    $('.inputrow:last').append("<div class='div-button' id='AddRowButton' onclick='AddRow(" + String($('.inputrow').length-1) + ")'> +</div>");
+    $('#AddRowButton').remove();
+    $('.inputrow:last').append("<div class='div-button' id='AddRowButton' onclick='AddRow(" + String($('.inputrow').length-1) + ")'> <strong>+</strong></div>");
 }
 
 function formatKeys(input){ //apufunktio syötteen käsittelylle
     if(input == 'PULL_OUT'){
-        return "ULKOPUOLEN VEDIN";
+        return "Ulkopuolen vedin";
     }
     else if(input == 'HANDLEPAIR_U'){
-        return "UMPIOVENPAINIKE " + handlepair_u_type;
+        return "Umpioven painike " + handlepair_u_type;
     }
     else if(input == 'HANDLEPAIR_P'){
-        return "PROFIILIOVEN PAINIKE"
+        return "Profiilioven painike " + handlepair_p_type;
     } 
     else if(input == 'HANDLE_IN_U'){
-        return "UMPIOVEN PUOLIPAINIKE"
+        return "Umpioven puolipainike " + handlepair_u_type;
     }
     
     else if(input.substr(0,3) === 'ACY'){
@@ -126,10 +127,23 @@ function MassCalculate(){
                 for (k = 0;k < helalista[j].products.length;k++){
                     list_object = {}; // alustetaan object
                     item_position = '#flxamount-' + String(i); //id helarivin arvolle
-                    console.log(item_position);
                     list_value = $(item_position).val();
                     list_object[helalista[j].products[k]] = list_value;
-                    product_list.push(list_object);
+                    if(helalista[j].products[k].substr(0,3) === 'ACY'){
+                        product_list.push({'Sarjakorotus Rakennuslukot':list_value});
+                        product_list.push(list_object);
+                        }
+                    else if(helalista[j].products[k].substr(0,3) === "AOF" ){
+                        product_list.push({"Sarjakorotus Kalustelukot":list_value});
+                        product_list.push(list_object);
+                        }
+                    else if(helalista[j].products[k].substr(0,3) === "ACL" ){
+                        product_list.push({"Sarjakorotus Kalustelukot":list_value});
+                        product_list.push(list_object);
+                        }
+                    else{
+                        product_list.push(list_object);
+                        }
                 }
             }
         }
@@ -138,7 +152,14 @@ function MassCalculate(){
     var massalista = {} // alustetaan muuttuja tulostetta varten. Myöhemmin pohja *.csv tiedostolle
     for (i = 0; i< product_list.length;i++){ // käydään läpi kerätyt tuotteet
         for (variable in product_list[i]){
-            massalista[variable] = product_list[i][variable];
+            if(massalista.hasOwnProperty(variable)){
+                console.log('We are here!');
+                massalista[variable] = parseInt(massalista[variable]) + parseInt(product_list[i][variable]);
+            }
+            else{
+                console.log('We are here for the first time');
+                massalista[variable] = parseInt(product_list[i][variable]);
+            }
         }
     }
     var tulos = $('#laskentatulos_column'); // muuttuja tulosteen paikkaa varten
