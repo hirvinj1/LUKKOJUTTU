@@ -67,14 +67,18 @@ function formatKeys(input){ //apufunktio syötteen käsittelylle
     if(input == 'PULL_OUT'){
         return "Ulkopuolen vedin";
     }
-    else if(input == 'HANDLEPAIR_U'){
+    else if(input === 'HANDLEPAIR_U'){
         return "Umpioven painike " + handlepair_u_type;
     }
-    else if(input == 'HANDLEPAIR_P'){
+    else if(input === 'HANDLEPAIR_P'){
         return "Profiilioven painike " + handlepair_p_type;
     } 
-    else if(input == 'HANDLE_IN_U'){
+    else if(input === 'HANDLE_IN_U'){
         return "Umpioven puolipainike " + handlepair_u_type;
+    }
+
+    else if(input === 'HANDLE_IN_P'){
+        return "Profiilioven puolipainike " + handlepair_p_type;
     }
     
     else if(input.substr(0,3) === 'ACY'){
@@ -85,6 +89,85 @@ function formatKeys(input){ //apufunktio syötteen käsittelylle
         return input + KeySystemLetter(keysystem) + " " + surface;
         }
     }
+
+    else if(input === 'PULL_IN'){
+        return "Sisäpuolen vedin ";
+    }
+
+    else if(input === 'PULL_OUT'){
+        return "Ulkopuolen vedin ";
+    }
+    else if(input === 'PULL_WIRE'){
+        return "Lankavedin ";
+    }
+
+    else if(input === 'PULL_WOOD'){
+        return "Puuvedin ";
+    }
+
+    else if(input === 'PULL_PAIR'){
+        return "Vedinpari ";
+    }
+
+    else if(input === 'HANDLE_IN_P_EXIT'){
+        return "Profiilioven sisäpuolen EXIT-painike "
+    }
+
+    else if(input === 'HANDLEPAIR_P_EXIT'){
+        return "Profiilioven EXIT-painikepari "
+    }
+
+    else if(input === 'HANDLEPAIR_U_EXIT'){
+        return "Umpioven EXIT-painikepari "
+    }
+
+    else if(input === 'HANDLE_U_OUT'){
+        return "Umpioven ulkopuolen puolipainike "
+    }
+
+    else if(input === 'HANDLE_P_OUT'){
+        return "Profiilioven ulkopuolen puolipainike "
+    }
+
+
+    else if(input === 'HANDLE_IN_U_EXIT'){
+        return "Umpioven sisäpuolen EXIT-painike "
+    }
+
+    else if(input === 'DOOR_STOP'){
+        return "Ovenpysäytin ";
+    }
+    
+
+    else if(input === 'CARD_READER'){
+        return "Kortinlukija ";
+    }
+
+    else if(input === "HANDLEPAIR_U_LIGHT"){
+        return "Välioven painike " + handlepair_light_type;
+    }
+
+    else if(input === 'WC_KNOB'){
+        return "WC-nuppi ";
+    }
+
+    else if(input === 'AVR'){
+        return "Abloy-vastarauta ";
+    }
+
+    else if(input === 'SAVR'){
+        return "Säädettävä Abloy-vastarauta ";
+    }
+    
+    else if(input === 'DOOR_BELL'){
+        return "Ovikello ";
+    }
+
+    else if(input === 'POST_HATCH'){
+        return "Postiluukku ";
+    }
+
+    
     else{
         return input
     }
